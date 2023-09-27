@@ -28,6 +28,11 @@ h6 {
 
 .top-line {
   border-bottom: 1px solid #e7e9fc;
+  box-shadow: (
+    0px 2px 1px rgba(46, 47, 66, 0.08),
+    0px 1px 1px rgba(46, 47, 66, 0.16),
+    0px 1px 6px rgba(46, 47, 66, 0.08)
+  );
 }
 
 .top-line .container {
@@ -60,7 +65,20 @@ span {
 .page-nav {
   display: flex;
   gap: 40px;
+  position: relative;
+  color: #404bbf;
 }
+
+.page-nav::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -1px;
+  height: 4px;
+  background-color: #404bbf;
+  border-radius: 2px;
+}
+
 .page-nav .link {
   font-weight: 500;
   font-size: 16px;
@@ -79,6 +97,7 @@ span {
 .address {
   font-style: normal;
   margin-left: auto;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .address .list {
   display: flex;
@@ -103,6 +122,16 @@ span {
 .site-name {
   background-color: #2e2f42;
   padding: 188px 0;
+  margin: 0 auto;
+  background-image: linear-gradient(
+      rgba(46, 47, 66, 0.7),
+      rgba(46, 47, 66, 0.7)
+    ),
+    url(../images/people-office\ 1.jpg);
+  max-width: 1440px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
 }
 
 .site-name .header {
@@ -129,6 +158,7 @@ span {
   border: none;
   border-radius: 4px;
   margin: 0 auto;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .site-name .service-button:hover,
