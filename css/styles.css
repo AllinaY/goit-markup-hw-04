@@ -41,6 +41,12 @@ h6 {
   width: 1158px;
   margin: 0 auto;
   padding: 0 15px 0 15px;
+  box-shadow: (
+    0px 2px 1px rgba(46, 47, 66, 0.08),
+    0px 1px 1px rgba(46, 47, 66, 0.16),
+    0px 1px 6px rgba(46, 47, 66, 0.08)
+  );
+  background: #FFFFFF;
   
 }
 .top-line-nav {
@@ -69,8 +75,11 @@ span {
   gap: 40px;
 }
 
-.page-nav .current::after {
+.page-nav .link-current {
   color: #404BBF;
+}
+
+.page-nav .link-current::after {
   content: "";
   position: absolute;
   left: 0;
