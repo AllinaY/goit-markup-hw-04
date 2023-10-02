@@ -293,10 +293,6 @@ img {
   display: flex;
 }
 
-.our-team-social-list-item {
-  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-
 .our-team-link {
   width: 40px;
   height: 40px;
@@ -305,6 +301,7 @@ img {
   align-items: center;
   display: flex;
   justify-content: center;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .our-team-link:hover,
@@ -411,10 +408,14 @@ img {
   align-items: baseline;
 }
 
+.container {
+  width: 1158px;
+  padding: 0 15px;
+  margin: 0 auto;
+}
+
 .footer-logo {
   display: inline-block;
-  margin-bottom: 100px;
-  margin-left: 156px;
   margin-right: 120px;
 }
 .footer .logo-end {
@@ -449,7 +450,6 @@ img {
 .footer-social-list-item {
   width: 40px;
   height: 40px;
-  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .footer-social-list-link {
@@ -460,6 +460,7 @@ img {
   display: flex;
   align-items: center;
   justify-content: center;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .footer-social-list-link:hover,
