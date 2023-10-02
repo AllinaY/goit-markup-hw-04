@@ -28,11 +28,9 @@ h6 {
 
 .top-line {
   border-bottom: 1px solid #e7e9fc;
-  box-shadow: 
-    0px 2px 1px rgba(46, 47, 66, 0.08),
-    0px 1px 1px rgba(46, 47, 66, 0.16),
-    0px 1px 6px rgba(46, 47, 66, 0.08);
-  background: #FFFFFF;
+  box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08),
+    0px 1px 1px rgba(46, 47, 66, 0.16), 0px 1px 6px rgba(46, 47, 66, 0.08);
+  background: #ffffff;
 }
 
 .top-line .container {
@@ -71,7 +69,7 @@ span {
 }
 
 .page-nav .link-current {
-  color: #404BBF;
+  color: #404bbf;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.5;
@@ -89,12 +87,10 @@ span {
   left: 0;
   bottom: -1px;
   height: 4px;
-  width: 100%; 
+  width: 100%;
   background-color: #404bbf;
   border-radius: 2px;
-  
 }
-
 
 .page-nav .link {
   font-weight: 500;
@@ -120,7 +116,6 @@ span {
 .address .list {
   display: flex;
   gap: 40px;
-  
 }
 
 .address .link {
@@ -264,8 +259,8 @@ img {
   background-color: #ffffff;
   width: calc((100% - 72px) / 4);
   border-radius: 0px 0px 4px 4px;
-  box-shadow:  0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
-  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
+    0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
 }
 
 .our-team-name-position {
@@ -298,6 +293,10 @@ img {
   display: flex;
 }
 
+.our-team-social-list-item {
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
 .our-team-link {
   width: 40px;
   height: 40px;
@@ -313,8 +312,6 @@ img {
   background-color: #404bbf;
 }
 
-
-
 .our-team-icon {
   fill: #f4f4fd;
 }
@@ -323,9 +320,9 @@ img {
   width: 1128px;
   height: 1000px;
   padding: 120px 0 120px 0;
-  box-sizing:content-box;
+  box-sizing: content-box;
   flex-shrink: 0;
-  margin: 0 auto; 
+  margin: 0 auto;
 }
 
 .service-header {
@@ -351,8 +348,12 @@ img {
 }
 
 .service-list-item:hover {
-  box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
-  
+  box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
+    0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
+}
+
+.service-list-item:hover .service-list-app-list {
+  transform: translateY(0%);
 }
 
 .service-list-app-pic {
@@ -397,10 +398,6 @@ img {
   color: #434455;
 }
 
-.service-list-paragraf:hover {
-  transform: translateY(0%);
-}
-
 .footer {
   background-color: #2e2f42;
   padding-top: 100px;
@@ -409,26 +406,29 @@ img {
   align-items: baseline;
 }
 
-.footer .container {
-  margin-right: 120px;
+.footer-container {
+  display: flex;
 }
 
-.footer .logo {
+.footer-logo {
   display: inline-block;
-  margin-bottom: 16px;
+  margin-bottom: 100px;
+  margin-left: 156px;
+  margin-right: 1020px;
 }
 .footer .logo-end {
   color: #f4f4fd;
 }
 
-.footer .paragraf {
-  line-height: 1.5;
+.footer-paragraf {
+  line-height: 24px;
   color: #f4f4fd;
-  letter-spacing: 0.02em;
+  letter-spacing: 0.32px;
   max-width: 264px;
+  font-weight: 400;
 }
 
-.footer .social {
+.footer-social-paragraf {
   color: #ffffff;
   font-family: Roboto;
   font-size: 16px;
@@ -439,20 +439,19 @@ img {
   margin-bottom: 16px;
 }
 
-.footer .social-list {
+.footer-social-list {
   display: flex;
   gap: 16px;
+  align-items: flex-start;
 }
 
-.footer .social-list .item {
+.footer-social-list-item {
   width: 40px;
   height: 40px;
-  transition: background-color: 250ms cubic-bezier(0.4, 0, 0.02,1);
- 
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.02, 1);
 }
 
-
-.footer .social-list .link {
+.footer-social-list-link {
   width: 100%;
   height: 100%;
   background-color: #4d5ae5;
@@ -460,21 +459,18 @@ img {
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  
 }
 
-.footer .social-list .link:hover,
-.footer .social-list .link:focus {
+.footer-social-list-link:hover,
+.footer-social-list-link:focus {
   background-color: #31d0aa;
 }
 
-
-
-.footer .social-list .svg {
+.footer-social-list-svg {
   width: 24;
   height: 24;
 }
 
-.footer .social-list .icon {
+.footer-social-list-icon {
   fill: #f4f4fd;
 }
